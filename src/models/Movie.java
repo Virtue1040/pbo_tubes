@@ -14,7 +14,6 @@ public class Movie {
     private String expire;
     private String duration;
     private String cover;
-    private ImageIcon coverImage;
     private ArrayList<Showtime> listShowtimes;
 
     public Movie(Integer id, String title, String sinopsis, String genre, Double price, String duration, String expire, String cover) {

@@ -6,11 +6,10 @@ import static module.ComponentMod.savePanelAsPDF;
 
 public class Ticket implements Printable {
     private Integer id;
-    private Integer id_user;
     private Showtime showtime;
+    private Integer id_user;
     private String seatNumber;
     private Double price;
-    private String status;
 
     public Ticket(Integer id, Showtime showtime, Integer id_user, Double price, String seatNumber) {
         this.showtime = showtime;
