@@ -1,0 +1,61 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			"resizable": false
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "progressBar1"
+				"foreground": new java.awt.Color( 210, 160, 75, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 170
+				"width": 205
+				"height": 5
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logo2"
+				"text": "Ease"
+				"font": new java.awt.Font( "Inter", 1, 25 )
+				"horizontalAlignment": 0
+				"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 55
+				"x": 110
+				"y": 55
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logo"
+				"text": "Tix"
+				"font": new java.awt.Font( "Inter", 1, 31 )
+				"horizontalAlignment": 0
+				"foreground": new java.awt.Color( 210, 160, 75, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 65
+				"height": 55
+				"x": 65
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logo3"
+				"text": "Loading ..."
+				"font": new java.awt.Font( "Inter", 1, 11 )
+				"horizontalAlignment": 0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 25
+				"x": 90
+				"y": 140
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 280, 240 )
+		} )
+	}
+}

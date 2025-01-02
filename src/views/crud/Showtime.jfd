@@ -1,0 +1,106 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			"modal": true
+			"title": "Showtime"
+			"resizable": false
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_stuio"
+				"text": "Studio"
+				"font": &Font0 new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 40
+				"height": 15
+				"x": 25
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "jadwal"
+				"font": &Font1 new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 29
+				"x": 25
+				"y": 160
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_name2"
+				"text": "Jadwal"
+				"font": #Font0
+				"labelFor": new FormReference( "jadwal" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 25
+				"y": 135
+				"width": 45
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Action"
+				"text": "Add"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"cursor": new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ActionMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 280
+				"height": 35
+				"x": 25
+				"y": 205
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "listTable"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 35
+				"width": 280
+				"height": 80
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "waktu"
+				"font": #Font1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 29
+				"x": 170
+				"y": 160
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_name3"
+				"text": "Waktu"
+				"font": #Font0
+				"labelFor": new FormReference( "waktu" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 45
+				"height": 15
+				"x": 170
+				"y": 135
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 345, 300 )
+		} )
+		add( new FormComponent( "raven.datetime.DatePicker" ) {
+			name: "datePicker1"
+			"dateFormat": "yyyy-MM-dd"
+			"validationOnNull": true
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 320 )
+		} )
+		add( new FormComponent( "raven.datetime.TimePicker" ) {
+			name: "timePicker1"
+			"validationOnNull": true
+			"24HourView": true
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 295, 320 )
+		} )
+	}
+}

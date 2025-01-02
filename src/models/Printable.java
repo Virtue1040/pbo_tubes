@@ -1,5 +1,7 @@
 package models;
 
+import javax.swing.*;
+
 public interface Printable {
-    void printTicket();
+    void printTicket(JPanel panel, String filePath);
 }

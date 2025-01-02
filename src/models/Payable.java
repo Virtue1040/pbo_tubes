@@ -1,5 +1,7 @@
 package models;
 
+import java.util.ArrayList;
+
 public interface Payable {
-    void processPayment(double amount);
+    String[] processPayment();
 }

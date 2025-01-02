@@ -1,0 +1,646 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			"modal": true
+			"resizable": false
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "progressBar1"
+				"foreground": new java.awt.Color( 210, 160, 75, 255 )
+				"value": 100
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 130
+				"y": 370
+				"width": 370
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Layar Bioskop"
+				"font": &Font0 new java.awt.Font( "Inter", 1, 15 )
+				"foreground": &Color0 new java.awt.Color( 221, 221, 221, 147 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 265
+				"y": 340
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "tersedia2"
+				"background": new java.awt.Color( 78, 78, 78, 255 )
+				"visible": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 135
+				"y": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "tersedia"
+				"background": new java.awt.Color( 167, 167, 167, 140 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 135
+				"y": 25
+				"width": 15
+				"height": 15
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Tersedia"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 160
+				"y": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "tidakTersedia"
+				"background": new java.awt.Color( 53, 53, 53, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 235
+				"y": 25
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Tidak Tersedia"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 260
+				"y": 25
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Pilihanmu"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 405
+				"y": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "pilihanMu"
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 15
+				"x": 380
+				"y": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "backPanel"
+				"background": &Color1 new java.awt.Color( 44, 44, 44, 140 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 645
+				"height": 95
+				"x": 0
+				"y": -30
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"rows": 5
+				"columns": 12
+			} ) {
+				name: "listSeat"
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox1"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox2"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox3"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox4"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox5"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox6"
+					"horizontalAlignment": 0
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "checkBox6StateChanged", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox7"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox8"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox9"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox10"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox11"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox12"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox13"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox14"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox15"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox16"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox17"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox18"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox19"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox20"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox21"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox22"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox23"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox24"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox25"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox26"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox27"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox28"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox29"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox30"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox31"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox32"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox33"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox34"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox35"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox36"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox37"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox38"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox39"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox40"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox41"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox42"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox43"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox44"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox45"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox46"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox47"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox48"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox49"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox50"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox51"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox52"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox53"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox54"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox55"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox56"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox57"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox58"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox59"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox60"
+					"horizontalAlignment": 0
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 45
+				"y": 120
+				"height": 190
+				"width": 540
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "A"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 16
+				"x": 20
+				"y": 130
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "B"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 20
+				"y": 170
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "C"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 20
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "D"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 11
+				"height": 19
+				"x": 20
+				"y": 245
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "E"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 11
+				"height": 19
+				"x": 20
+				"y": 282
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "1"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 60
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "2"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 105
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": "3"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 150
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": "4"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 195
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": "5"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 240
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+				"text": "6"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 285
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+				"text": "7"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 330
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label17"
+				"text": "8"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 375
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label18"
+				"text": "9"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 420
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label19"
+				"text": "10"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 465
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+				"text": "11"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 510
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label21"
+				"text": "12"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 16
+				"height": 19
+				"x": 555
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_totalPrice"
+				"text": "Total Harga"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 106
+				"height": 15
+				"x": 75
+				"y": 420
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "totalPrice"
+				"text": "IDR -"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 106
+				"height": 15
+				"x": 75
+				"y": 460
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "seat"
+				"font": #Font0
+				"foreground": #Color0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 106
+				"height": 15
+				"x": 450
+				"y": 460
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_seat"
+				"text": "Tempat Duduk"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 106
+				"height": 15
+				"x": 450
+				"y": 420
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Action"
+				"text": "RINGKASAN ORDERAN"
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"font": new java.awt.Font( "Inter Semi Bold", 1, 12 )
+				"cursor": new java.awt.Cursor( 12 )
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ActionMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 575
+				"height": 45
+				"x": 25
+				"y": 500
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "backPanel2"
+				"background": #Color1
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "backPanel3"
+					"background": new java.awt.Color( 44, 44, 44, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 3
+					"height": 70
+					"x": 313
+					"y": 15
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 645
+				"height": 175
+				"x": 0
+				"y": 400
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 640, 600 )
+		} )
+	}
+}

@@ -1,0 +1,159 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "TixEase - Login"
+			"$sizePolicy": 1
+			"resizable": false
+			"font": new java.awt.Font( "Inter", 0, 12 )
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logo"
+				"text": "Tix"
+				"font": new java.awt.Font( "Inter", 1, 31 )
+				"horizontalAlignment": 0
+				"foreground": new java.awt.Color( 210, 160, 75, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 65
+				"height": 55
+				"x": 390
+				"y": 40
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "login"
+				"font": new java.awt.Font( "Inter", 0, 12 )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "loginFocusGained", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 345
+				"y": 155
+				"width": 220
+				"height": 29
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_email"
+				"text": "Email"
+				"font": new java.awt.Font( "Inter", 0, 12 )
+				"labelFor": new FormReference( "login" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 345
+				"y": 130
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_password"
+				"text": "Password"
+				"font": &Font0 new java.awt.Font( "Inter", 1, 12 )
+				"labelFor": new FormReference( "password" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 68
+				"height": 19
+				"x": 345
+				"y": 195
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Login"
+				"text": "Login"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "login1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 345
+				"y": 340
+				"width": 220
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "imagePreview"
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 15
+				"width": 295
+				"height": 395
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "rememberMe"
+				"text": "Remember me"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 345
+				"y": 255
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "password"
+				"font": new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 345
+				"y": 220
+				"height": 29
+				"width": 220
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logo2"
+				"text": "Ease"
+				"font": new java.awt.Font( "Inter", 1, 25 )
+				"horizontalAlignment": 0
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 55
+				"x": 435
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_register"
+				"text": "Don't have an account?"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 19
+				"x": 347
+				"y": 315
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Register"
+				"text": "<html><u>Register Here</u></html>"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"foreground": new java.awt.Color( 210, 160, 75, 255 )
+				"toolTipText": "Open Register Form"
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "RegisterMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 19
+				"x": 485
+				"y": 315
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "back"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": -30
+				"width": 605
+				"height": 465
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Back"
+					"font": new java.awt.Font( "Inter", 1, 12 )
+					"toolTipText": "Back to Movies"
+					"background": new java.awt.Color( 210, 160, 75, 255 )
+					"focusPainted": false
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "movieMouseClicked", true ) )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 605, 465 )
+		} )
+	}
+}

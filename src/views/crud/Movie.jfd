@@ -1,0 +1,187 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormComponent( "raven.datetime.DatePicker" ) {
+			name: "datePicker1"
+			"dateFormat": "yyyy-MM-dd"
+			"validationOnNull": true
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 560 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Movie"
+			"$sizePolicy": 1
+			"modal": true
+			"resizable": false
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_name"
+				"text": "Title"
+				"font": &Font0 new java.awt.Font( "Inter", 0, 12 )
+				"labelFor": new FormReference( "title" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 30
+				"y": 20
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "title"
+				"font": &Font1 new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 29
+				"x": 30
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_email"
+				"text": "Genre"
+				"font": #Font0
+				"labelFor": new FormReference( "title" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 30
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "genre"
+				"font": #Font1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 29
+				"x": 30
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_password"
+				"text": "Price"
+				"font": &Font2 new java.awt.Font( "Inter", 1, 12 )
+				"labelFor": &FormReference0 new FormReference( "price" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 30
+				"y": 150
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "price"
+				"font": &Font3 new java.awt.Font( "Inter", 0, 12 )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "priceKeyTyped", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 29
+				"x": 30
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_duration"
+				"text": "Duration"
+				"font": #Font2
+				"labelFor": new FormReference( "duration" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 190
+				"y": 20
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "duration"
+				"font": #Font3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 29
+				"x": 190
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Action"
+				"text": "Add"
+				"font": &Font4 new java.awt.Font( "Inter", 1, 12 )
+				"background": &Color0 new java.awt.Color( 210, 160, 75, 255 )
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ActionMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 295
+				"height": 35
+				"x": 30
+				"y": 430
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_expire"
+				"text": "Expire"
+				"font": #Font2
+				"labelFor": new FormReference( "expire" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 190
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "expire"
+				"font": #Font3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 29
+				"x": 190
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "selectfile"
+				"text": "Select File (img)"
+				"font": #Font4
+				"background": #Color0
+				"cursor": #Cursor0
+				"toolTipText": "Select untuk cover movie"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "selectfileMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 30
+				"x": 190
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_cover"
+				"text": "Cover Image"
+				"font": #Font2
+				"labelFor": new FormReference( "price" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 195
+				"y": 150
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "sinopsis"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 240
+				"width": 295
+				"height": 170
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_sinopsis"
+				"text": "Sinopsis"
+				"font": #Font2
+				"labelFor": #FormReference0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 30
+				"y": 215
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 375, 530 )
+		} )
+		add( new FormComponent( "raven.datetime.TimePicker" ) {
+			name: "timePicker1"
+			"24HourView": true
+			"validationOnNull": true
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 305, 560 )
+			"size": new java.awt.Dimension( 236, 305 )
+		} )
+	}
+}

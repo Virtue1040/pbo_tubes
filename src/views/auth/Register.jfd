@@ -1,0 +1,153 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"resizable": false
+			"$locationPolicy": 1
+			"title": "TixEase - Register"
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "email"
+				"font": &Font0 new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 29
+				"x": 40
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_email"
+				"text": "Email"
+				"font": &Font1 new java.awt.Font( "Inter", 0, 12 )
+				"labelFor": new FormReference( "name" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 40
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logo2"
+				"text": "Register"
+				"font": new java.awt.Font( "Inter", 1, 25 )
+				"horizontalAlignment": 0
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 300
+				"height": 55
+				"x": 0
+				"y": 25
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "password"
+				"font": &Font2 new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 29
+				"x": 40
+				"y": 265
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_password"
+				"text": "Password"
+				"font": &Font3 new java.awt.Font( "Inter", 1, 12 )
+				"labelFor": new FormReference( "password" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 40
+				"y": 240
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Register"
+				"text": "Register"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "RegisterMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 35
+				"x": 40
+				"y": 410
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "name"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 29
+				"x": 40
+				"y": 135
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_name"
+				"text": "Name"
+				"font": #Font1
+				"labelFor": new FormReference( "name" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 15
+				"x": 40
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_login"
+				"text": "Already have an account?"
+				"font": #Font3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 148
+				"height": 19
+				"x": 42
+				"y": 385
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Login"
+				"text": "<html><u>Login Here</u></html>"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"foreground": new java.awt.Color( 210, 160, 75, 255 )
+				"toolTipText": "Open Login Form"
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "LoginMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 65
+				"height": 19
+				"x": 195
+				"y": 385
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_password2"
+				"text": "Confirm Password"
+				"font": #Font3
+				"labelFor": new FormReference( "confirm_password" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 19
+				"x": 40
+				"y": 305
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "confirm_password"
+				"font": #Font2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 29
+				"x": 40
+				"y": 330
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "back"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 715
+				"height": 530
+				"x": -200
+				"y": -25
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 230, 15 )
+			"size": new java.awt.Dimension( 300, 485 )
+		} )
+	}
+}

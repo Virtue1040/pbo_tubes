@@ -1,23 +1,36 @@
 package models;
 
-public class Ticket extends Showtime implements Printable {
-    private String seatNumber;
-    private double price;
+import javax.swing.*;
 
-    public Ticket(String title, String time, String seatNumber, double price) {
-        super(title, time);
+import static module.ComponentMod.savePanelAsPDF;
+
+public class Ticket implements Printable {
+    private Integer id;
+    private Integer id_user;
+    private Showtime showtime;
+    private String seatNumber;
+    private Double price;
+    private String status;
+
+    public Ticket(Integer id, Showtime showtime, Integer id_user, Double price, String seatNumber) {
+        this.showtime = showtime;
+        this.id_user = id_user;
+        this.id = id;
         this.seatNumber = seatNumber;
         this.price = price;
     }
 
     @Override
-    public void printTicket() {
-        System.out.println("========== TICKET ==========");
-        System.out.println("Movie: " + getTitle());
-        System.out.println("Time: " + getTime());
-        System.out.println("Seat: " + seatNumber);
-        System.out.println("Price: $" + price);
-        System.out.println("============================");
+    public void printTicket(JPanel panel, String filePath) {
+        savePanelAsPDF(panel, filePath);
+    }
+
+    public Integer getId_user() {
+        return id_user;
+    }
+
+    public Showtime getShowtime() {
+        return showtime;
     }
 
     public String getSeatNumber() {

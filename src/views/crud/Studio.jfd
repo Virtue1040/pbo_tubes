@@ -1,0 +1,74 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"resizable": false
+			"modal": true
+			"title": "Studio"
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_studio_name"
+				"text": "Studio Name"
+				"font": &Font0 new java.awt.Font( "Inter", 0, 12 )
+				"labelFor": new FormReference( "studioName" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 15
+				"x": 20
+				"y": 25
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "studioName"
+				"font": &Font1 new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 29
+				"x": 20
+				"y": 45
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Action"
+				"text": "Add"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"cursor": new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ActionMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 290
+				"height": 35
+				"x": 20
+				"y": 105
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_capacity"
+				"text": "Capacity"
+				"font": #Font0
+				"labelFor": new FormReference( "studioName" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 15
+				"x": 170
+				"y": 25
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "capacity"
+				"font": #Font1
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "capacityKeyTyped", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 140
+				"height": 29
+				"x": 170
+				"y": 45
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 345, 195 )
+		} )
+	}
+}

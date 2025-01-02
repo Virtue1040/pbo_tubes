@@ -1,0 +1,621 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "Ringkasan Orderan"
+			"$sizePolicy": 1
+			"modal": true
+			"resizable": false
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Action"
+				"text": "SELESAIKAN PEMBAYARAN"
+				"background": &Color0 new java.awt.Color( 210, 160, 75, 255 )
+				"font": &Font0 new java.awt.Font( "Inter Semi Bold", 1, 12 )
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ActionMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 350
+				"height": 45
+				"x": 20
+				"y": 550
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "Redirected"
+				"background": new java.awt.Color( 25, 25, 25, 216 )
+				"visible": false
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label"
+					"text": "You has been redirected to Midtrans Payment"
+					"font": new java.awt.Font( "Inter", 1, 15 )
+					"foreground": &Color1 new java.awt.Color( 210, 160, 75, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"height": 16
+					"x": 35
+					"y": 275
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Finish the transaction in 5 Minutes"
+					"font": new java.awt.Font( "Inter", 1, 12 )
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"height": 16
+					"x": 105
+					"y": 300
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "CheckStatus"
+					"text": "CHECK STATUS"
+					"background": #Color0
+					"font": #Font0
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "CheckStatusMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 135
+					"height": 45
+					"x": 130
+					"y": 335
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 440
+				"height": 730
+				"x": 0
+				"y": -30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Price"
+				"text": "IDR 10000"
+				"font": &Font1 new java.awt.Font( "Inter", 1, 12 )
+				"foreground": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 84
+				"height": 16
+				"x": 240
+				"y": 115
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Harga"
+				"font": #Font1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 16
+				"x": 160
+				"y": 115
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Duration"
+				"text": "1 Jam 10 menit"
+				"font": #Font1
+				"foreground": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 84
+				"height": 16
+				"x": 240
+				"y": 90
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Durasi         "
+				"font": #Font1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 16
+				"x": 160
+				"y": 90
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Genre          "
+				"font": #Font1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 16
+				"x": 160
+				"y": 65
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Genre"
+				"text": "Genre"
+				"font": #Font1
+				"foreground": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 16
+				"x": 240
+				"y": 65
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title"
+				"text": "TRAIN TO BUSAN"
+				"font": new java.awt.Font( "Inter Semi Bold", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 160
+				"y": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Cover"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 115
+				"height": 145
+				"x": 20
+				"y": 20
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title2"
+				"text": "Detail Transaksi"
+				"font": &Font2 new java.awt.Font( "Inter", 1, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 20
+				"y": 220
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title3"
+				"text": "TIKET"
+				"font": &Font3 new java.awt.Font( "Inter", 0, 12 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 20
+				"y": 250
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "seat"
+				"text": "L6"
+				"font": #Font3
+				"horizontalAlignment": 4
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 235
+				"y": 250
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "pricePerSeat"
+				"text": "L6"
+				"font": #Font3
+				"horizontalAlignment": 4
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 235
+				"y": 275
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title6"
+				"text": "KURSI REGULER"
+				"font": #Font3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 20
+				"y": 275
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title7"
+				"text": "BIAYA LAYANAN"
+				"font": #Font3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 20
+				"y": 300
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title8"
+				"text": "IDR 4000.0"
+				"font": #Font3
+				"horizontalAlignment": 4
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 235
+				"y": 300
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title9"
+				"text": "Untuk membatu peningkatan pelayanan kami"
+				"font": #Font3
+				"foreground": new java.awt.Color( 221, 221, 221, 147 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 20
+				"x": 20
+				"y": 320
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel9"
+				"background": &Color2 new java.awt.Color( 44, 44, 44, 140 )
+				"visible": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 195
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel10"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 225
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel11"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 255
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel12"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 285
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel13"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 315
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel14"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 345
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel15"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 375
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel29"
+				"background": &Color3 new java.awt.Color( 44, 44, 44, 204 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 15
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel30"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 45
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel31"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 75
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel32"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 105
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel33"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 135
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel34"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 165
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel35"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 195
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel36"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 225
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel37"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 255
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel38"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 285
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel39"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 315
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel40"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 345
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel41"
+				"background": #Color3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 375
+				"y": 360
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel42"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 15
+				"y": 195
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title10"
+				"text": "Metode Pembayaran"
+				"font": #Font2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 20
+				"x": 20
+				"y": 395
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"horizontalAlignment": 4
+				"selected": true
+				"requestFocusEnabled": false
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 205
+				"y": 450
+				"width": 165
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logo_midtrans"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 440
+				"width": 60
+				"height": 40
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "backPanel2"
+				"background": &Color4 new java.awt.Color( 44, 44, 44, 140 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 440
+				"height": 185
+				"x": 0
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title11"
+				"text": "Midtrans"
+				"font": #Font3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 20
+				"x": 95
+				"y": 450
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Title12"
+				"text": "Total Bayar"
+				"font": new java.awt.Font( "Inter", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 20
+				"x": 20
+				"y": 510
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "totalPrice"
+				"text": "IDR 10000"
+				"font": new java.awt.Font( "Inter", 1, 14 )
+				"horizontalAlignment": 4
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 225
+				"height": 20
+				"x": 145
+				"y": 510
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "backPanel3"
+				"background": #Color4
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 440
+				"height": 240
+				"x": 0
+				"y": 390
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel16"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 45
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel17"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 75
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel6"
+				"background": &Color5 new java.awt.Color( 44, 44, 44, 140 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 105
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel18"
+				"background": #Color5
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 135
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel7"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 165
+				"y": 195
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel8"
+				"background": #Color2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 15
+				"height": 10
+				"x": 195
+				"y": 195
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 405, 655 )
+		} )
+	}
+}

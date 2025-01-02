@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"modal": true
+			"title": "List Movie"
+			"resizable": false
+			"defaultCloseOperation": 2
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "listTable"
+					"font": new java.awt.Font( "Inter", 0, 12 )
+					"selectionMode": 0
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"height": 290
+				"y": 55
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Delete"
+				"text": "Delete"
+				"font": &Font0 new java.awt.Font( "Inter", 1, 12 )
+				"background": &Color0 new java.awt.Color( 210, 160, 75, 255 )
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "DeleteMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 35
+				"x": 395
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "AddShowtime"
+				"text": "Show Showtimes"
+				"font": #Font0
+				"background": #Color0
+				"cursor": #Cursor0
+				"enabled": false
+				"toolTipText": "Lihat jadwal movie"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "AddShowtimeMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"height": 35
+				"x": 255
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Update"
+				"text": "Update"
+				"font": #Font0
+				"background": #Color0
+				"cursor": #Cursor0
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "UpdateMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 35
+				"x": 155
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Add"
+				"text": "Add"
+				"font": new java.awt.Font( "Inter", 1, 12 )
+				"background": new java.awt.Color( 210, 160, 75, 255 )
+				"cursor": new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "AddMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 35
+				"x": 55
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 510, 400 )
+		} )
+	}
+}
